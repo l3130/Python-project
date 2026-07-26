@@ -68,3 +68,11 @@ print("=" * 40)
 languages = "Python,Java,C++,JavaScript"
 
 print(languages.split(","))
+
+full_name = input("Enter your full name: ")
+full_name_stripped = full_name.strip()
+full_name_stripped_title = full_name_stripped.title()
+print(f'Characters: {len(full_name_stripped)}')
+print(f'{full_name_stripped_title.startswith("a")}')
+print(f'Number of "a": {full_name_stripped.count("a")}')
+print(f'words: {full_name_stripped.split(" ")}')
