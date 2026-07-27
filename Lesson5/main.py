@@ -97,9 +97,19 @@ if exam_score > 100 or exam_score < 0:
 
 elif exam_score >= 90:
     print("Excellent")
+
 elif exam_score >= 70:
     print("Very Good")
 elif exam_score >= 50:
     print("Pass")
 else:
     print("Fail")
+
+vip = input("Are you a VIP member? (yes/no): ").lower()
+
+user_age = int(input("Enter your age: "))
+has_id = input("Do you have an ID? (yes/no): ").lower()
+if vip == "yes" or (user_age >= 18 and has_id == "yes"):
+    print("Access Granted.")
+else:
+    print("Access Denied.")
